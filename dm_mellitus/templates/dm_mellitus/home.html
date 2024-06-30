@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>dm_mellitus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'dm_mellitus/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to Diabetes Mellitus Solutions</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'dm_mellitus:product_list' %}">Products</a></li>
+            <li><a href="{% url 'dm_mellitus:customer_list' %}">Customers</a></li>
+        </ul>
+    </nav>
+</body>
